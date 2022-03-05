@@ -6,11 +6,10 @@ import TodoItemList from './components/TodoItemList';
 
 export default function App() {
   const [todoArray, setTodoArray] = useState([]);
-
   return (
     <View style={styles.container}>
       <TodoInput setTodoArray={setTodoArray} />
-      <TodoItemList todoArray={todoArray} />
+      <TodoItemList todoArray={todoArray} setTodoArray={setTodoArray} />
     </View>
   );
 }

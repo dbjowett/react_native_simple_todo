@@ -11,12 +11,7 @@ export default function TodoInput({ setTodoArray }) {
 
   return (
     <View style={styles.inputContainer}>
-      <TextInput
-        placeholder='Todos'
-        style={styles.textInput}
-        value={todo}
-        onChangeText={(text) => setTodo(text)}
-      />
+      <TextInput placeholder='Todos' style={styles.textInput} value={todo} onChangeText={(text) => setTodo(text)} />
       <Button title='Add' style={styles.button} onPress={addTodo} />
     </View>
   );
